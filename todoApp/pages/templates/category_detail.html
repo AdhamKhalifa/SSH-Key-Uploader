@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="">
+    <h2>{{ object.name }}</h2>
+    <p>{{ object.date }}</p>
+    <!-- Assume this would be our todo; just filler code-->
+</div>
+
+<p><a href="{% url 'category_edit' category.pk %}">Edit</a></p>
+    <a href="{% url 'category_delete' category.pk %}">Delete</a></p>
+<p>Return to <a href="{% url 'category_list' category.pk %}">All Categories</a>.</p>
+{% endblock content %}

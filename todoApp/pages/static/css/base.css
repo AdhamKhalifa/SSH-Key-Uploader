@@ -1,0 +1,18 @@
+/* static/css/base.css */
+/*Adham Khalifa - Alejandro Garibo - Szymon Wozniak
+*/
+
+.navbar {
+    background: #323031;
+}
+
+.nav-link, .navbar-brand {
+    color:#FFF;
+}
+.nav-link:hover, .navbar-brand:hover{
+    color:#C1BDB3;
+}
+
+.user-link {
+    float: right;
+}

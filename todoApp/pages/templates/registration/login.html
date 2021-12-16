@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Log In{% endblock title %}
+
+{% block content %}
+<!-- <div class="container" style="width:60%"> -->
+  <h2>Login</h2>
+  <!-- <div class="form-container">   -->
+    <form method="post">
+      <!-- <div class="form-group">
+        <label for="exampleInputEmail1">Username</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="userNameHelp" placeholder="Enter username">
+        <small id="userNameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div> -->
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  <!-- </div> -->
+<!-- </div> -->
+
+{% endblock content %}
+  
+  
+  <!-- {% block content }
+    <h2>Log In</h2>
+    <form method="POST">
+      {% csrf_token }
+      {% form.as_p }
+      <button type="submit">Log In</button>
+    </form>
+  {% endblock content } -->
